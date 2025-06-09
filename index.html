@@ -5,6 +5,17 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <script src="https://cdn.tailwindcss.com"></script>
+    <!-- modifica la configurazione -->
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    primary: '#41463D',
+                    secondary: '#9D8DF1'
+                }
+            }
+        }
+    </script>
 </head>
 <body>
     <!-- installazione e primo utilizzo -->
@@ -22,6 +33,8 @@
         </ul>
      </div>
      <!-- container e margini -->
-      <div class="container p-4 m-5"> sono un container </div>
+      <div class="container text-center p-4 m-5"> sono un container </div>
+      <h1 class=" text-3xl font-normal text-primary">titolo2</h1>
+      <p class="text-xl font-normal text-secondary">Lorem ipsum dolor sit amet consectetur.</p>
 </body>
 </html>
