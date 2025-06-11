@@ -10,6 +10,7 @@
     <!-- modifica la configurazione -->
     <script>
         tailwind.config = {
+            darkMode:'class',
             theme: {
                 extend: {
                     primary: '#41463D',
@@ -20,7 +21,8 @@
                     bacground_color:"red",
                     btn_primario:"yellow",
                     btn_secondario:"purpule",
-                    btn_info:"azzuro"
+                    btn_info:"azzuro",
+                    link:"#31264D"
                 },
             },
         }
@@ -48,7 +50,7 @@
       < margin e padding 
        <p class="m-margin p-padding">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p> --> 
        <!-- tema personalisato -->
-        <p class="c-color bg-bacground_color">Lorem ipsum dolor sit amet consectetur.</p>
+        <!-- <p class="c-color bg-bacground_color">Lorem ipsum dolor sit amet consectetur.</p>
         <!-- palette costum -->
          <button class="btn_primario">primario</button>
          <button class="btn_secondario">secondario</button>
@@ -60,10 +62,24 @@
             <div class="bg-secondary border-secondary"></div>
           </div>
 <!-- colori di testo -->
-<div class="flex ">
-     <div class="bg-green-500 p-4 m2 flex-grow">box1</div>
- <div class="bg-red-500 p-4 m2 flex-shrink">box2</div>
- <div class="bg-blue-500 p-4 m2">box3</div>
+
+<header class="bg-blue-500">
+      <h1 class=" text-3xl font-normal text-primary">titolo2</h1>
+      <p class="text-xl">Lorem ipsum dolor sit, amet consectetur adipisicing elit.</p>
+</header>
+<section class="bg-red-500 ">
+    <h2></h2>
+    <p class="text-2xl">Lorem ipsum dolor sit, amet consectetur adipisicing elit.</p>
+    <a href="#" class="text-link">Lorem, ipsum dolor.</a>
+</section>
+<footer class="bg-white">
+    <p class="text-xl">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Optio.</p>
+</footer>
+
+<!-- darkmod -->
+
+<div class="dark:bg-gray-800 dark:text-white">
+    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Minus, distinctio?
 </div>
 </body>
 </html>
