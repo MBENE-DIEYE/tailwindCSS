@@ -1,0 +1,23 @@
+{
+  "name": "tailwindcss",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/MBENE-DIEYE/tailwindCSS.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/MBENE-DIEYE/tailwindCSS/issues"
+  },
+  "homepage": "https://github.com/MBENE-DIEYE/tailwindCSS#readme",
+  "dependencies": {
+    "@tailwindcss/cli": "^4.1.9",
+    "tailwindcss": "^4.1.9"
+  }
+}

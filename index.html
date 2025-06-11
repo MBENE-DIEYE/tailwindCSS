@@ -4,7 +4,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="./style.css">
+     <link href="./output.css" rel="stylesheet">
+    <!-- <script src="https://cdn.tailwindcss.com"></script> -->
     <!-- modifica la configurazione -->
     <script>
         tailwind.config = {
@@ -15,19 +17,22 @@
                     margin: 10,
                     padding: 15,
                     color:"blue",
-                    bacground_color:"red"
+                    bacground_color:"red",
+                    btn_primario:"yellow",
+                    btn_secondario:"purpule",
+                    btn_info:"azzuro"
                 },
             },
         }
     </script>
 </head>
 <body>
-    <!-- installazione e primo utilizzo -->
+    <!-- installazione e primo utilizzo
     <div class="text-center bg-blue-500 p-4">
         <p>Lorem ipsum dolor sit amet.</p>
     </div>
-    <!-- stili di testo -->
-     <div>
+    <stili di testo -->
+     <!-- <div>
         <h1 class="font-bold">il mio titolo</h1>
         <p class="text-xl">Lorem ipsum dolor sit, amet consectetur adipisicing elit.</p>
         <ul class="leading-relaxed">
@@ -35,15 +40,21 @@
             <li>parole due</li>
             <li>parole tre</li>
         </ul>
-     </div>
+     </div> -->
      <!-- container e margini -->
-      <div class="container text-center p-4 m-5"> sono un container </div>
+      <!-- <div class="container text-center p-4 m-5"> sono un container </div>
       <h1 class=" text-3xl font-normal text-primary">titolo2</h1>
       <p class="text-xl font-normal text-secondary">Lorem ipsum dolor sit amet consectetur.</p>
-      <!-- margin e padding -->
-       <p class="m-margin p-padding">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+      < margin e padding 
+       <p class="m-margin p-padding">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p> --> 
        <!-- tema personalisato -->
         <p class="c-color bg-bacground_color">Lorem ipsum dolor sit amet consectetur.</p>
         <!-- palette costum -->
+         <button class="btn_primario">primario</button>
+         <button class="btn_secondario">secondario</button>
+         <button class="btn_info">info</button>
+
+         <!-- sfondo e bordo -->
+          
 </body>
 </html>
