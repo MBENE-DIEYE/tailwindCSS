@@ -1,1 +1,20 @@
 @import "tailwindcss";
+
+.bg-primary{
+    background-color: #f12;
+}
+.bg-secondary{
+    background-color: yellow;
+}
+
+.border-primary{
+    border: darkblue;
+}
+.border-secondary{
+    border: fuchsia;
+}
+.card{
+    padding: 100px;
+    border: 1px solid black;
+    margin: 10px;
+}
