@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="./style.css">
-     <link href="./output.css" rel="stylesheet">
+     <!-- <link href="./output.css" rel="stylesheet"> -->
     <script src="https://cdn.tailwindcss.com"></script>
     <!-- modifica la configurazione -->
     <script>
@@ -51,7 +51,7 @@
        <p class="m-margin p-padding">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p> --> 
        <!-- tema personalisato -->
         <!-- <p class="c-color bg-bacground_color">Lorem ipsum dolor sit amet consectetur.</p>
-        <!-- palette costum -->
+        <!-- palette costum  -->
          <button class="btn_primario">primario</button>
          <button class="btn_secondario">secondario</button>
          <button class="btn_info">info</button>
@@ -81,5 +81,17 @@
 <div class="dark:bg-gray-800 dark:text-white">
     Lorem ipsum, dolor sit amet consectetur adipisicing elit. Minus, distinctio?
 </div>
+<!-- stile darkmod -->
+ <div class="p-4">
+    <button id="darkModeToggle" class="border px-4 py-1 cursor-pointer">Dark mode <span id="darkModeStatus">inactive</span></button>
+ </div>
+
+ <!-- toggle darkmod -->
+ <script>
+    const toggleDarkMode=()=>{
+        document.body.classList.toggle("dark");
+        document.querySelector("#darkModeStatus").innerHTML=document.body.classList.contains("dark")?"Active" : "inactive"
+    }
+ </script>
 </body>
 </html>
