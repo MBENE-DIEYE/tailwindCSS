@@ -27,6 +27,18 @@
             },
         }
     </script>
+    <!-- <style type="text/tailwindcss">
+        @layer components{
+            .btn{
+                border: 1px solid black;
+                padding: 10px 20px;
+                border-radius: 4px;
+            }
+            .btn-primary{
+                @apply btn text-white bg-primary hover:opacity-95 active:border-2
+            }
+        }
+    </style> -->
 </head>
 <body>
     <!-- installazione e primo utilizzo
@@ -104,12 +116,21 @@
  <div>
    <input type="text" class="focus:outline-none focus:ring focus:border-blue-300 border p-2">
     <input type="text"  class="active:bg-green-700 font-bold py-2 px-4 border rounded">
- </div>
+ </div><br><br>
 
  <!-- stili desabled -->
   <form action="#">
-    <input type="text">
-    <button></button>
+    <input type="text" class="focus:outline-none focus:ring border p-2 desabled"><br><br>
+    <button class="bg-green-500 text-white font-bold px-4 py-2 desabled">invia</button>
   </form>
+
+  <!--components costum  -->
+
+  <div class="p-4">
+    <button class="btn">clica qui</button>
+  </div>
+  <div class="p-4">
+    <button class="btn-primary">clica qui</button>
+  </div>
 </body>
 </html>
