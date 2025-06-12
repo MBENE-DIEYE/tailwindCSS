@@ -1,28 +1,29 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="./style.css">
-     <!-- <link href="./output.css" rel="stylesheet"> -->
+    <!-- <link href="./output.css" rel="stylesheet"> -->
     <script src="https://cdn.tailwindcss.com"></script>
     <!-- modifica la configurazione -->
     <script>
         tailwind.config = {
-            darkMode:'class',
+            darkMode: 'class',
             theme: {
                 extend: {
                     primary: '#41463D',
                     secondary: '#9D8DF1',
                     margin: 10,
                     padding: 15,
-                    color:"blue",
-                    bacground_color:"red",
-                    btn_primario:"yellow",
-                    btn_secondario:"purpule",
-                    btn_info:"azzuro",
-                    link:"#31264D"
+                    color: "blue",
+                    bacground_color: "red",
+                    btn_primario: "yellow",
+                    btn_secondario: "purpule",
+                    btn_info: "azzuro",
+                    link: "#31264D"
                 },
             },
         }
@@ -40,13 +41,14 @@
         }
     </style> -->
 </head>
+
 <body>
     <!-- installazione e primo utilizzo
     <div class="text-center bg-blue-500 p-4">
         <p>Lorem ipsum dolor sit amet.</p>
     </div>
     <stili di testo -->
-     <!-- <div>
+    <!-- <div>
         <h1 class="font-bold">il mio titolo</h1>
         <p class="text-xl">Lorem ipsum dolor sit, amet consectetur adipisicing elit.</p>
         <ul class="leading-relaxed">
@@ -55,82 +57,84 @@
             <li>parole tre</li>
         </ul>
      </div> -->
-     <!-- container e margini -->
-      <!-- <div class="container text-center p-4 m-5"> sono un container </div>
+    <!-- container e margini -->
+    <!-- <div class="container text-center p-4 m-5"> sono un container </div>
       <h1 class=" text-3xl font-normal text-primary">titolo2</h1>
       <p class="text-xl font-normal text-secondary">Lorem ipsum dolor sit amet consectetur.</p>
       < margin e padding 
-       <p class="m-margin p-padding">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p> --> 
-       <!-- tema personalisato -->
-        <p class="c-color bg-bacground_color bg-red-500">Lorem ipsum dolor sit amet consectetur.</p>
-        <!-- palette costum  -->
-         <button class="btn_primario bg-blue-500">primario</button>
-         <button class="btn_secondario bg-gray-800">secondario</button>
-         <button class="btn_info bg-green-700">info</button>
+       <p class="m-margin p-padding">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p> -->
+    <!-- tema personalisato -->
+    <p class="c-color bg-bacground_color bg-red-500">Lorem ipsum dolor sit amet consectetur.</p>
+    <!-- palette costum  -->
+    <button class="btn_primario bg-blue-500">primario</button>
+    <button class="btn_secondario bg-gray-800">secondario</button>
+    <button class="btn_info bg-green-700">info</button>
 
-         <!-- sfondo e bordo -->
-          <div class="card">
-            <div class="bg-primary border-primary">Lorem, ipsum dolor.</div>
-            <div class="bg-secondary border-secondary">Lorem, ipsum dolor.</div>
-          </div>
-<!-- colori di testo -->
+    <!-- sfondo e bordo -->
+    <div class="card">
+        <div class="bg-primary border-primary">Lorem, ipsum dolor.</div>
+        <div class="bg-secondary border-secondary">Lorem, ipsum dolor.</div>
+    </div>
+    <!-- colori di testo -->
 
-<header class="bg-blue-500">
-      <h1 class=" text-3xl font-normal text-primary">titolo2</h1>
-      <p class="text-xl">Lorem ipsum dolor sit, amet consectetur adipisicing elit.</p>
-</header>
-<section class="bg-red-500 ">
-    <h2>titolo</h2>
-    <p class="text-2xl">Lorem ipsum dolor sit, amet consectetur adipisicing elit.</p>
-    <a href="#" class="text-link">Lorem, ipsum dolor.</a>
-</section>
-<footer class="bg-white">
-    <p class="text-xl">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Optio.</p>
-</footer>
+    <header class="bg-blue-500">
+        <h1 class=" text-3xl font-normal text-primary">titolo2</h1>
+        <p class="text-xl">Lorem ipsum dolor sit, amet consectetur adipisicing elit.</p>
+    </header>
+    <section class="bg-red-500 ">
+        <h2>titolo</h2>
+        <p class="text-2xl">Lorem ipsum dolor sit, amet consectetur adipisicing elit.</p>
+        <a href="#" class="text-link">Lorem, ipsum dolor.</a>
+    </section>
+    <footer class="bg-white">
+        <p class="text-xl">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Optio.</p>
+    </footer>
 
-<!-- darkmod -->
+    <!-- darkmod -->
 
-<div class="dark:bg-gray-800 dark:text-white">
-    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Minus, distinctio?
-</div>
-<!-- stile darkmod -->
- <div class="p-4">
-    <button id="darkModeToggle" class="border px-4 py-1 cursor-pointer">Dark mode <span id="darkModeStatus">inactive</span></button>
- </div>
+    <div class="dark:bg-gray-800 dark:text-white">
+        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Minus, distinctio?
+    </div>
+    <!-- stile darkmod -->
+    <div class="p-4">
+        <button id="darkModeToggle" class="border px-4 py-1 cursor-pointer">Dark mode <span
+                id="darkModeStatus">inactive</span></button>
+    </div>
 
- <!-- toggle darkmod -->
- <script>
-    const toggleDarkMode=()=>{
-        document.body.classList.toggle("dark");
-        document.querySelector("#darkModeStatus").innerHTML=document.body.classList.contains("dark")?"Active" : "inactive"
-    }
- </script>
+    <!-- toggle darkmod -->
+    <script>
+        const toggleDarkMode = () => {
+            document.body.classList.toggle("dark");
+            document.querySelector("#darkModeStatus").innerHTML = document.body.classList.contains("dark") ? "Active" : "inactive"
+        }
+    </script>
 
- <!-- stili hover -->
- <button class="bg-blue-500 p-4 hover:bg-red-500">btn1</button>
- <button class="bg-green-500 p-4 hover:bg-yellow-500">btn2</button>
- <button class="bg-red-500 p-4 hover:bg-gray-800">btn3</button><br><br>
+    <!-- stili hover -->
+    <button class="bg-blue-500 p-4 hover:bg-red-500">btn1</button>
+    <button class="bg-green-500 p-4 hover:bg-yellow-500">btn2</button>
+    <button class="bg-red-500 p-4 hover:bg-gray-800">btn3</button><br><br>
 
- <!-- stili focus& active -->
+    <!-- stili focus& active -->
 
- <div>
-   <input type="text" class="focus:outline-none focus:ring focus:border-blue-300 border p-2">
-    <input type="text"  class="active:bg-green-700 font-bold py-2 px-4 border rounded">
- </div><br><br>
+    <div>
+        <input type="text" class="focus:outline-none focus:ring focus:border-blue-300 border p-2">
+        <input type="text" class="active:bg-green-700 font-bold py-2 px-4 border rounded">
+    </div><br><br>
 
- <!-- stili desabled -->
-  <form action="#">
-    <input type="text" class="focus:outline-none focus:ring border p-2 desabled"><br><br>
-    <button class="bg-green-500 text-white font-bold px-4 py-2 desabled">invia</button>
-  </form>
+    <!-- stili desabled -->
+    <form action="#">
+        <input type="text" class=" border p-2 desabled:border-blue-300"><br><br>
+        <button class=" font-bold px-4 py-2 desabled:bg-green-500 text-white">invia</button>
+    </form>
 
-  <!--components costum  -->
+    <!--components costum  -->
 
-  <div class="p-4">
-    <button class="btn">clica qui</button>
-  </div>
-  <div class="p-4">
-    <button class="btn-primary">clica qui</button>
-  </div>
+    <div class="p-4">
+        <button class="btn">clica qui</button>
+    </div>
+    <div class="p-4">
+        <button class="btn-primary">clica qui</button>
+    </div>
 </body>
+
 </html>
