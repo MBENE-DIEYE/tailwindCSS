@@ -93,8 +93,17 @@
         document.querySelector("#darkModeStatus").innerHTML=document.body.classList.contains("dark")?"Active" : "inactive"
     }
  </script>
+
+ <!-- stili hover -->
  <button class="bg-blue-500 p-4 hover:bg-red-500">btn1</button>
  <button class="bg-green-500 p-4 hover:bg-yellow-500">btn2</button>
- <button class="bg-red-500 p-4 hover:bg-gray-800">btn3</button>
+ <button class="bg-red-500 p-4 hover:bg-gray-800">btn3</button><br><br>
+
+ <!-- stili focus& active -->
+
+ <div>
+   <input type="text" class="focus:outline-none focus:ring focus:border-blue-300 border p-2">
+    <input type="text"  class="active:bg-green-700 font-bold py-2 px-4 border rounded">
+ </div>
 </body>
 </html>
